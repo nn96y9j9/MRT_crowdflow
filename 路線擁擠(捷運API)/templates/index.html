@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Car Weight Data</title>
+</head>
+
+<body>
+    <!-- 在這裡顯示DataFrame轉換的HTML表格 -->
+    {{ table|safe }}
+
+    <!-- 使用JavaScript定時重新載入頁面 -->
+    <script type="text/javascript">
+        // 設定每5分鐘重新載入頁面
+        setInterval(function () {
+            location.reload();
+        }, 300000); // 300000 毫秒 = 5 分鐘
+    </script>
+</body>
+
+</html>
